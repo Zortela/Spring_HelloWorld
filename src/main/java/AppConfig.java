@@ -1,3 +1,4 @@
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -13,6 +14,7 @@ public class AppConfig {
     }
 
     @Bean(name = "Cat")
+    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public Cat getCat() {
         Cat cat = new Cat("Sora");
         cat.say();
