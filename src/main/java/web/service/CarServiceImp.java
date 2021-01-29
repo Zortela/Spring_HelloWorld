@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CarServiceImp implements CarService {
 
-    List<Car> cars = new ArrayList<>();
+    private List<Car> cars = new ArrayList<>();
 
     {
         cars.add(new Car("Lada", 99, "Sedan"));
