@@ -9,9 +9,10 @@ import java.util.List;
 public class Car {
 
     private String name;
+    
     private int series;
+    
     private String model;
-
 
 
     public Car(String name, int series, String model) {
